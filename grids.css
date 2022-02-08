@@ -1,0 +1,74 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+
+#gridAreas {
+    display: grid;
+    grid-template-areas: 
+    "headerNav"
+    "cursos"
+    "servicios"
+    "pieRedes"
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    
+}
+
+.headerNav {
+    grid-area: headerNav;
+    /* background-color: red; */
+}
+
+#cursos {
+    grid-area: cursos;
+    /* background-color:blue ; */
+}
+
+#servicios {
+    grid-area: servicios;
+    /* background-color: burlywood; */
+}
+
+footer {
+    grid-area: pieRedes;
+   /*  background-color: pink; */
+}
+
+/* celu */
+
+@media (max-width: 480px){
+    
+    body{
+        background-color: aqua;
+    }
+
+}
+
+/* tablet */
+
+@media (min-width: 481px) and (max-width: 1023px){
+    
+    body{
+        background-color: orange;
+    }
+    
+    
+}
+
+/* pc */
+
+@media (min-width: 1024px){
+
+    body{
+        background-color: blueviolet;
+    }
+    
+}
+
